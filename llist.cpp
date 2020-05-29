@@ -17,18 +17,9 @@ LList::LList(const LList& copyLList) {
 
 
 LList::~LList(){
-	forceNodeDelete(head);
-}
-
-void LList::forceNodeDelete(Node* node)
-{
-    if (node == NULL) {
-        return;
-    }
-
-    Node* nextDeleteNode = node->next;
-    delete node;
-    forceNodeDelete(nextDeleteNode);
+	while (head) {
+		pop_front();
+	}
 }
 
 int LList::operator[](size_t idx) const{
