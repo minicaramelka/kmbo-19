@@ -22,9 +22,7 @@ class LList{
 		copyList.head = nullptr;
 	}
 	~LList();                        // free resources
-	void forceNodeDelete(Node* node);
-
-
+	
 	void push_back(int val);         // add new value at the end:  [1 2 3 4] -> [1 2 3 4 5]
 	void push_front(int val);        // add new value at the begin [1 2 3 4] -> [5 1 2 3 4]
 	void pop_back();          // remove at the end          [1 2 3 4] -> [1 2 3]
@@ -39,5 +37,3 @@ class LList{
 
 #endif //LLIST_H
 
-
-#endif //LLIST_H
